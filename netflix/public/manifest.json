@@ -1,0 +1,20 @@
+{
+  "short_name": "Netflix",
+  "name": "Netflix Web App",
+  "icons": [
+    {
+      "src": "netflix.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "netflix(1).png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
