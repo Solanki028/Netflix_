@@ -18,8 +18,20 @@ const app = express();
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 app.use(cookieParser());
+
+const allowedOrigins = [
+    'http://localhost:3000', // Development frontend
+    'https://netflix-netflix-7z84.onrender.com', // Production frontend
+];
+
 const corsOptions = {
-    origin:'http://localhost:3000',
+    origin: (origin, callback) => {
+        if (allowedOrigins.includes(origin) || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
     credentials:true
 }
 app.use(cors(corsOptions));

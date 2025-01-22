@@ -1,5 +1,9 @@
 
-export const API_END_POINT = "http://localhost:6060/api/v1/user";
+const isDevelopment = process.env.NODE_ENV === 'development';
+
+export const API_END_POINT = isDevelopment
+    ? 'http://localhost:6060/api/v1/user' // Local backend for development
+    : 'https://netflix-backend-us6g.onrender.com/api/v1/user'; // Deployed backend for production
 
 export const options = {
   method: 'GET',
