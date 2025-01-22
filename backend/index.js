@@ -25,7 +25,6 @@ const allowedOrigins = [
 ];
 
 const corsOptions = {
-<<<<<<< HEAD
     origin: (origin, callback) => {
         if (allowedOrigins.includes(origin) || !origin) {
             callback(null, true);
@@ -33,9 +32,6 @@ const corsOptions = {
             callback(new Error('Not allowed by CORS'));
         }
     },
-=======
-    origin:'https://netflix-netflix-7z84.onrender.com',
->>>>>>> 30bdf73306b321288f2b9becc56c52590e711f15
     credentials:true
 }
 app.use(cors(corsOptions));
