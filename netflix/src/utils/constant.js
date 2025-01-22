@@ -1,5 +1,5 @@
 
-export const API_END_POINT = "https://netflix-backend-us6g.onrender.com/api/v1/user/register";
+export const API_END_POINT = "https://netflix-backend-us6g.onrender.com";
 
 export const options = {
   method: 'GET',
