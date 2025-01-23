@@ -1,4 +1,5 @@
 //step-1
+//
 // const express = require("express");
 import express from "express";
 import dotenv from "dotenv";
@@ -20,8 +21,8 @@ app.use(express.json());
 app.use(cookieParser());
 
 const allowedOrigins = [
-    'http://localhost:3000', // Development frontend
-    'https://netflix-netflix-7z84.onrender.com', // Production frontend
+    process.env.FRONTEND_ORIGIN,// Development frontend
+    process.env.FRONTEND_ORIGIN_DEV, // Production frontend
 ];
 
 const corsOptions = {
