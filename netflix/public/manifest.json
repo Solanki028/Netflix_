@@ -1,14 +1,14 @@
 {
-  "short_name": "Netflix",
-  "name": "Netflix Web App",
+  "short_name": "Flixchill",
+  "name": "Flixchill web App",
   "icons": [
     {
-      "src": "netflix.png",
+      "src": "video=palyer(1).png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "netflix(1).png",
+      "src": "video-player.png",
       "type": "image/png",
       "sizes": "512x512"
     }
