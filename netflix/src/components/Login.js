@@ -144,7 +144,7 @@ const Login = () => {
                     </button>
                     {/* Toggle between Login and Signup */}
                     <p className="text-white mt-2">
-                        {isLogin ? "New to Netflix?" : "Already have an account?"}
+                        {isLogin ? "New to Flixchill?" : "Already have an account?"}
                         <span
                             onClick={toggleLogin}
                             className="ml-1 text-blue-900 font-medium cursor-pointer"
